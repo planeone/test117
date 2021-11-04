@@ -1,3 +1,8 @@
+function radians(deg){
+	return (Math.PI+deg)/180
+}
+
+
 function drawGame(){
 	const scene=new THREE.Scene();
 	const camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
@@ -19,6 +24,10 @@ function drawGame(){
 	const mesh=new THREE.Mesh(plane,material);
 	
 	scene.add(mesh);
+	
+	mesh.rotation.x=radians(90);
+	
+	camera.position.z=10
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
