@@ -28,6 +28,8 @@ function drawGame(){
 	mesh.rotation.x=radians(90);
 	
 	camera.position.z=10
+	camera.rotation.x=radians(10);
+	camera.position.y=10;
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
