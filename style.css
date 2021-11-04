@@ -1,0 +1,26 @@
+body{
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+
+button{
+	border-radius:10px;
+	border:0px;
+	font-size:20px;
+}
+
+#start{
+	width: 332px;
+	height: 91px;
+	color:green;
+	background:url("imageButton.png");
+	position:absolute;
+	top:40%;
+	left:40%;
+}
+
+#gameCanvas{
+	margin:0px;
+	padding:0px;
+}
