@@ -29,7 +29,7 @@ function drawGame(){
 	
 	camera.position.z=10
 	camera.rotation.x=radians(20);
-	camera.position.y=5;
+	camera.position.y=2;
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
