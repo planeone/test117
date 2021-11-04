@@ -1,5 +1,5 @@
 function radians(deg){
-	return (Math.PI-deg)/180
+	return (Math.PI*deg)/180
 }
 
 
