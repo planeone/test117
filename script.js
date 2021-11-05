@@ -22,12 +22,16 @@ function drawGame(){
 	const plane2=new THREE.PlaneGeometry(100,1000);
 	
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.jpg")});
+	const matirialRoad=new THRE.MeshBasicMatirial({map:texture.load("road.jpg")});
 	
 	const mesh=new THREE.Mesh(plane,material);
+	const road=new THREE.Mesh(plane2,matirialRoad);
 	
 	scene.add(mesh);
 	
 	mesh.rotation.x=radians(-80);
+	road.rotation.x=radians(-80);
+	road.position.y=0.1;
 	
 	camera.position.z=510;
 	
