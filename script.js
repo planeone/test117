@@ -18,7 +18,7 @@ function drawGame(){
 	
 	scene.background=texture.load('./nebo.jpg');
 	
-	const plane=new THREE.PlaneGeometry(1000,1000);
+	const plane=new THREE.PlaneGeometry(2000,1000);
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.jpg")});
 	
 	const mesh=new THREE.Mesh(plane,material);
@@ -28,8 +28,6 @@ function drawGame(){
 	mesh.rotation.x=radians(-80);
 	
 	camera.position.z=510;
-	//camera.rotation.x=radians(-40);
-	//camera.position.y=2;
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
