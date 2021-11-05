@@ -15,9 +15,11 @@ button{
 	height: 91px;
 	color:green;
 	background:url("imageButton.png");
+}
+
+#myButtons{
 	position:absolute;
 	top:40%;
-	left:40%;
 }
 
 #gameCanvas{
