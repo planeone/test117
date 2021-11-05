@@ -23,6 +23,13 @@ function drawGame(){
 	mesh.rotation.x=radians(-80);
 	
 	camera.position.z=510;
+	const button1=document.createElement("button");
+	const button2=document.createElement('button');
+	
+	const div=document.body.children[1];
+	
+	div.append(button1);
+	div.append(button2);
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
