@@ -31,7 +31,7 @@ function drawGame(){
 	
 	mesh.rotation.x=radians(-80);
 	road.rotation.x=radians(-80);
-	road.position.y=0.1;
+	road.position.y=1;
 	
 	camera.position.z=510;
 	
