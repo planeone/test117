@@ -25,7 +25,7 @@ function drawGame(){
 	
 	scene.add(mesh);
 	
-	mesh.rotation.x=radians(90);
+	mesh.rotation.x=radians(-80);
 	
 	camera.position.z=10
 	//camera.rotation.x=radians(20);
