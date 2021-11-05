@@ -22,7 +22,7 @@ function drawGame(){
 	const plane2=new THREE.PlaneGeometry(100,1000);
 	
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.jpg")});
-	const matirialRoad=new THRE.MeshBasicMatirial({map:texture.load("road.jpg")});
+	const matirialRoad=new THREE.MeshBasicMatirial({map:texture.load("road.jpg")});
 	
 	const mesh=new THREE.Mesh(plane,material);
 	const road=new THREE.Mesh(plane2,matirialRoad);
