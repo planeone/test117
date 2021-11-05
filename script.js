@@ -19,19 +19,14 @@ function drawGame(){
 	scene.background=texture.load('./nebo.jpg');
 	
 	const plane=new THREE.PlaneGeometry(2000,1000);
-	const plane2=new THREE.PlaneGeometry(100,1000);
 	
-	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.jpg")});
-	const matirialRoad=new THREE.MeshBasicMaterial({map:texture.load("road.jpg")});
+	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.png")}):
 	
 	const mesh=new THREE.Mesh(plane,material);
-	const road=new THREE.Mesh(plane2,matirialRoad);
 	
 	scene.add(mesh);
 	
 	mesh.rotation.x=radians(-80);
-	road.rotation.x=radians(-80);
-	road.position.y=1;
 	
 	camera.position.z=510;
 	
