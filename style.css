@@ -17,7 +17,7 @@ button{
 	background:url("imageButton.png");
 }
 
-#myButtons{
+#myButton{
 	position:absolute;
 	top:40%;
 }
