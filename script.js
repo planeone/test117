@@ -13,7 +13,7 @@ function drawGame(){
 	
 	scene.background=texture.load('./nebo.jpg');
 	
-	const plane=new THREE.PlaneGeometry(1000,1000);
+	const plane=new THREE.PlaneGeometry(2000,1000);
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.png")});
 	
 	const mesh=new THREE.Mesh(plane,material);
