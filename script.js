@@ -29,6 +29,9 @@ function drawGame(){
 	button1.textContent="<";
 	button2.textContent=">";
 	
+	button1.className="control";
+	button2.className="control";
+	
 	const div=document.body.children[1];
 	
 	div.append(button1);
