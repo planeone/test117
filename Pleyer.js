@@ -15,13 +15,13 @@ class Pleyer{
 		});
 	}
 	drawCar(car=true){
-		let rotate,pos;
+		let pos;
 		if(car===true){
 			pos=this.pos;
 		}else{
 			pos={x:0,y:0,z:0};
 		}
-		this.draw(this.car,this.pos,this.rotate);
+		this.draw(this.car,pos,this.rotate);
 			
 	}
 }
