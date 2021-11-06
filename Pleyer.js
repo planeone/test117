@@ -23,7 +23,7 @@ class Pleyer{
 		}else{
 			pos={x:0,y:0,z:0};
 		}
-		this.draw(this.car,pos,this.rotate);
+		this.draw(this.car,pos,this.rotate,this.scale);
 			
 	}
 }
