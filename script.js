@@ -34,7 +34,7 @@ function drawGame(){
 	
 	const div=document.body.children[1];
 	
-	console.log(new Pleyer());
+	console.log(new Pleyer({scene:scene,rotate:{x:radians(-80),y:0,z:0},pos:{x:0,y:0,z:500},car:""}));
 	
 	div.append(button1);
 	div.append(button2);
