@@ -24,9 +24,7 @@ function drawGame(){
 	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:radians(180),z:0},pos:{x:0,y:0,z:500},scale:{x:0.25,y:0.25,z:0.25},car:"carPleyer.obj",materialCar:new THREE.MeshPhongMaterial({map:texture.load("Rx7_rx9_rx7_color_color.png")})});
 	
 	pleyer.drawCar();
-	
-	consle.log(pleyer);
-	
+
 	scene.add(light);
 	scene.add(pointLight);
 	scene.add(mesh);
