@@ -34,6 +34,8 @@ function drawGame(){
 	
 	const div=document.body.children[1];
 	
+	console.log(new Pleyer());
+	
 	div.append(button1);
 	div.append(button2);
 	
