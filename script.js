@@ -9,7 +9,9 @@ function drawGame(){
 	document.body.prepend(render.domElement);
 	render.domElement.id="gameCanvas";
 	
-	let texture=new THREE.TextureLoader();
+	const light=new THREE.DirectionalLight(0xffffff,1);
+	
+	const texture=new THREE.TextureLoader();
 	
 	scene.background=texture.load('./nebo.jpg');
 	
@@ -18,15 +20,19 @@ function drawGame(){
 	
 	const mesh=new THREE.Mesh(plane,material);
 	
-	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:0,z:0},pos:{x:0,y:0,z:500},car:"carPleyer.obj"});
+	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:0,z:0},pos:{x:0,y:0,z:500},scale:{x:0.5,y:0.5,z:0.5},car:"carPleyer.obj"});
 	
 	pleyer.drawCar();
 	
+	scene.add(light);
 	scene.add(mesh);
 	
 	mesh.rotation.x=radians(-80);
 	
 	camera.position.z=510;
+	light.position=camera.position;
+	
+	
 	const button1=document.createElement("button");
 	const button2=document.createElement('button');
 	
