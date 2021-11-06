@@ -17,8 +17,9 @@ function drawGame(){
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.png")});
 	
 	const mesh=new THREE.Mesh(plane,material);
+	const string="./carPleyer.obj";
 	
-	const pleyer=new Pleyer({scene:scene,rotate:{x:radians(-80),y:0,z:0},pos:{x:0,y:0,z:500},car:"carPleyer.obj"});
+	const pleyer=new Pleyer({scene:scene,rotate:{x:radians(-80),y:0,z:0},pos:{x:0,y:0,z:500},car:string});
 	
 	pleyer.drawCar();
 	
