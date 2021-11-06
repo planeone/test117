@@ -5,6 +5,7 @@ class Pleyer{
 		this.pos=options.pos;
 		this.rotate=options.rotate;
 		this.scale=options.scale;
+		this.materialCar=options.materialCar;
 		this.car=options.car;
 		this.robot=options.robot;
 	}
@@ -13,6 +14,7 @@ class Pleyer{
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
+			obj.materials=this.materialCar;
 			this.scene.add(obj);
 		});
 	}
