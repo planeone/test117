@@ -9,7 +9,7 @@ function drawGame(){
 	document.body.prepend(render.domElement);
 	render.domElement.id="gameCanvas";
 	
-	const light=new THREE.DirectionalLight(0xffffff,1);
+	const light=new THREE.AmbientLight(0xffffff,1);
 	
 	const texture=new THREE.TextureLoader();
 	
