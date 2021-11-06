@@ -25,6 +25,8 @@ function drawGame(){
 	
 	pleyer.drawCar();
 	
+	consle.log(pleyer);
+	
 	scene.add(light);
 	scene.add(pointLight);
 	scene.add(mesh);
