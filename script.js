@@ -9,7 +9,8 @@ function drawGame(){
 	document.body.prepend(render.domElement);
 	render.domElement.id="gameCanvas";
 	
-	const light=new THREE.AmbientLight(0xffffff,0.1);
+	const light=new THREE.AmbientLight(0xffffff,1);
+	const pointLight=new THREE.PointLight(0xffffff,1);
 	
 	const texture=new THREE.TextureLoader();
 	
@@ -25,6 +26,7 @@ function drawGame(){
 	pleyer.drawCar();
 	
 	scene.add(light);
+	scene.add(pointLight);
 	scene.add(mesh);
 	
 	mesh.rotation.x=radians(-80);
