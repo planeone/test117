@@ -33,6 +33,7 @@ function drawGame(){
 	
 	camera.position.z=510;
 	light.position=camera.position;
+	pointLight.position=camera.position;
 	
 	
 	const button1=document.createElement("button");
