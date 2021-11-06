@@ -15,6 +15,7 @@ class Pleyer{
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
 			obj.material=this.materialCar;
+			console.log(obj);
 			this.scene.add(obj);
 		});
 	}
