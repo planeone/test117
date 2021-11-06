@@ -18,6 +18,10 @@ function drawGame(){
 	
 	const mesh=new THREE.Mesh(plane,material);
 	
+	const pleyer=new Pleyer({scene:scene,rotate:{x:radians(-80),y:0,z:0},pos:{x:0,y:0,z:500},car:"Rx7.obj"}));
+	
+	pleyer.drawCar();
+	
 	scene.add(mesh);
 	
 	mesh.rotation.x=radians(-80);
@@ -33,8 +37,6 @@ function drawGame(){
 	button2.className="control";
 	
 	const div=document.body.children[1];
-	
-	console.log(new Pleyer({scene:scene,rotate:{x:radians(-80),y:0,z:0},pos:{x:0,y:0,z:500},car:""}));
 	
 	div.append(button1);
 	div.append(button2);
