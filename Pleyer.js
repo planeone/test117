@@ -1,16 +1,27 @@
 class Pleyer{
 	constructor(options){
-		this.objLoade=new OBJLoader();
-		this.x=options.x;
-		this.y=options.y;
-		this.z=options.z;
-		this.file=options.file;
+		this.scene=options.scene;
+		this.objLoade=new THREE.OBJLoader();
+		this.pos=options.pos;
+		this.rotate=options.rotate
+		this.car=options.car;
+		this.robot=options.robot;
 	}
-	draw(){
+	draw(file,pos,rotation){
 		this.objLoade.load(this,(obj)=>{
-			obj.rotation.x=radians(-80);
-			obj.position.set(this.x,this.y,this.z);
-			this.obj=obj;
+			obj.position.set(pos.x,pos.y,pos.z);
+			obj.rotation.set(rotation.x,rotation.y,rotation.z);
+			this.scene.add(obj);
 		});
+	}
+	drawCar(car=true){
+		let rotate,pos;
+		if(car===true){
+			pos=this.pos;
+		}else{
+			pos={x:0,y:0,z:0};
+		}
+		this.draw(this.car,this.pos,this.rotate);
+			
 	}
 }
