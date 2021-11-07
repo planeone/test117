@@ -71,6 +71,6 @@ button.addEventListener("mousedown",function(){
 });
 button.addEventListener("mouseup",function(){
 	button.classList.remove("startGame");
-	button.remove();
 	drawGame();
+	//button.remove();
 });
