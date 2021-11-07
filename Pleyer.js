@@ -18,7 +18,7 @@ class Pleyer{
 				if(child instanceof THREE.Mesh){
 					obj.materials=this.materialCar;
 				}
-			}
+			});
 			console.log(obj);
 			this.scene.add(obj);
 		});
