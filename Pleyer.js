@@ -14,6 +14,7 @@ class Pleyer{
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
+			console.log(this.materialCar);
 			obj.traverse((child)=>{
 				if(child instanceof THREE.Mesh){
 					child.material=this.materialCar[0];
