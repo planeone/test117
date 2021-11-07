@@ -16,7 +16,7 @@ class Pleyer{
 			obj.scale.set(scale.x,scale.y,scale.z);
 			obj.traverse(function(child){
 				if(child instanceof THREE.Mesh){
-					obj.materials=this.materialCar;
+					child.materials=this.materialCar;
 				}
 			});
 			console.log(obj);
