@@ -61,6 +61,14 @@ function drawGame(){
 	
 	const div=document.body.children[1];
 	
+	div.addEventListener("click",function(e){
+		if(e.target.textContent==="<"){
+			pleyer.pos.x-=1;
+		}else{
+			pleyer.pos.x+=1;
+		}
+	});
+	
 	div.style.top=window.innerHeight-(parseInt(div.clientHeight)+100)+"px";
 	div.style.paddingLeft="100px";
 	
