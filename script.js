@@ -62,6 +62,7 @@ function drawGame(){
 	const div=document.body.children[1];
 	
 	div.addEventListener("click",function(e){
+		console.log(obj);
 		if(e.target.textContent==="<"){
 			obj.position.x-=1;
 		}else{
