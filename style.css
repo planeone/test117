@@ -1,7 +1,7 @@
 body{
 	padding:0px;
 	margin:0px;
-	/*overflow:hidden;*/
+	overflow:hidden;
 }
 
 button{
@@ -20,7 +20,7 @@ button{
 #myButton{
 	position:absolute;
 	top:40%;
-	padding-left:35%;
+	padding-left:200px;
 }
 
 #gameCanvas{
