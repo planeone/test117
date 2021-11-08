@@ -61,14 +61,14 @@ function drawGame(){
 	
 	const div=document.body.children[1];
 	
-	div.style.top=window.innerHeight-(parseInt(div.clientHeight)+300)+"px";
+	div.style.top=window.innerHeight-(parseInt(div.clientHeight)+200)+"px";
 	div.style.paddingLeft="100px";
 	
 	div.append(button1);
 	div.append(button2);
 	
 	window.addEventListener("resize",function(){
-		div.style.top=window.innerHeight-(parseInt(div.clientHeight)+300)+"px";
+		div.style.top=window.innerHeight-(parseInt(div.clientHeight)+200)+"px";
 		div.style.paddingLeft="100px";
 		render.setSize(window.innerWidth,window.innerHeight);
 		camera.aspect=window.innerWidth/window.innerHeight;
