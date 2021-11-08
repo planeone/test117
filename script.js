@@ -65,7 +65,7 @@ function drawGame(){
 	div.append(button2);
 	
 	window.addEventListener("resize",function(){
-		div.style.top=window.innerHeight-(parseInt(div.clientHeight)+500)+"px";
+		div.style.top=window.innerHeight-(parseInt(div.clientHeight)+300)+"px";
 		div.style.paddingLeft="100px";
 		render.setSize(window.innerWidth,window.innerHeight);
 		camera.aspect=window.innerWidth/window.innerHeight;
