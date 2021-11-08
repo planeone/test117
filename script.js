@@ -27,7 +27,7 @@ function drawGame(){
 	
 	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:radians(180),z:0},pos:{x:0,y:1,z:500},scale:{x:1,y:1,z:1},car:"carPleyer.obj",materialCar:carMaterial});
 	
-	const obj=pleyer.drawCar();
+	const object=pleyer.drawCar();
 	
 	console.log(pleyer);
 
@@ -62,11 +62,10 @@ function drawGame(){
 	const div=document.body.children[1];
 	
 	div.addEventListener("click",function(e){
-		console.log(obj);
 		if(e.target.textContent==="<"){
-			obj.position.x-=1;
+			object.position.x-=1;
 		}else{
-			obj.position.x+=1;
+			object.position.x+=1;
 		}
 	});
 	
