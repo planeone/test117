@@ -74,9 +74,9 @@ button.addEventListener("mouseup",function(){
 	drawGame();
 	button.remove();
 });
-button.addEventListener("mousover",function(){
+button.addEventListener("mouseover",function(){
 	button.style.background="#00ffff";
 });
-button.addEventListener("mousout",function(){
+button.addEventListener("mouseout",function(){
 	button.style.background="url(\"imageButton.png\")";
 });
