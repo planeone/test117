@@ -34,8 +34,13 @@ function drawGame(){
 	scene.add(light);
 	scene.add(pointLight);
 	scene.add(mesh);
+	scene.add(mesh2);
 	
 	mesh.rotation.x=radians(-90);
+	
+	mesh2.position.z=mesh.scale.z
+	
+	const meshArr=[mesh,mesh2];
 	
 	camera.position.z=520;
 	camera.rotation.x=radians(-10);
@@ -67,8 +72,12 @@ function drawGame(){
 		camera.updateProjectionMatrix();
 	});
 	function cycle(){
-		mesh.position.z+=1;
-		mesh2.position.z+=1;
+		meshArr.forEach(function(elem){
+			elem.position.z+=1;
+			if(elem.position.z===-elem.scale.z){
+				elem.position.z=elem.scale.z
+			}
+		});
 		requestAnimationFrame(cycle);
 		render.render(scene,camera);
 	}
