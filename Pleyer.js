@@ -10,18 +10,19 @@ class Pleyer{
 		this.robot=options.robot;
 	}
 	draw(file,pos,rotation,scale){
+		let objMesh=null;
 		this.objLoade.load(this.car,(obj)=>{
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
-			console.log(this.materialCar);
+			objMesh=obj;
 			obj.traverse((child)=>{
 				if(child instanceof THREE.Mesh){
 					child.material=this.materialCar;
 				}
 			});
-			console.log(obj);
 			this.scene.add(obj);
+			return objMesh;
 		});
 	}
 	drawCar(car=true){
@@ -31,7 +32,7 @@ class Pleyer{
 		}else{
 			pos={x:0,y:0,z:0};
 		}
-		this.draw(this.car,pos,this.rotate,this.scale);
+		return this.draw(this.car,pos,this.rotate,this.scale);
 			
 	}
 }
