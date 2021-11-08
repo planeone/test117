@@ -25,7 +25,7 @@ function drawGame(){
 	
 	const carMaterial=new THREE.MeshBasicMaterial({map:texture.load("Rx7_rx9_rx7_color_color.png")});
 	
-	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:radians(180),z:0},pos:{x:0,y:0,z:500},scale:{x:0.5,y:0.5,z:0.5},car:"carPleyer.obj",materialCar:carMaterial});
+	const pleyer=new Pleyer({scene:scene,rotate:{x:0,y:radians(180),z:0},pos:{x:0,y:1,z:500},scale:{x:1,y:1,z:1},car:"carPleyer.obj",materialCar:carMaterial});
 	
 	pleyer.drawCar();
 	
