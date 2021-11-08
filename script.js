@@ -76,7 +76,7 @@ function drawGame(){
 	});
 	function cycle(){
 		meshArr.forEach(function(elem){
-			elem.position.z+=1;
+			elem.position.z+=5;
 			if(elem.position.z>=1000){
 				elem.position.z=-1000;
 			}
