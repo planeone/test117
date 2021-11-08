@@ -75,8 +75,8 @@ function drawGame(){
 	function cycle(){
 		meshArr.forEach(function(elem){
 			elem.position.z+=1;
-			if(elem.position.z===-elem.scale.z){
-				elem.position.z=elem.scale.z
+			if(elem.position.z<==-elem.scale.z){
+				elem.position.z=elem.scale.z;
 			}
 		});
 		requestAnimationFrame(cycle);
