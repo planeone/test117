@@ -67,10 +67,10 @@ function drawGame(){
 }
 const button=document.getElementById("start");
 button.addEventListener("mousedown",function(){
-	button.classList.add("startGame");
+	button.style.background="#00ff00";
 });
 button.addEventListener("mouseup",function(){
-	button.classList.remove("startGame");
+	button.style.background="url(\"imageButton.png\")";
 	drawGame();
-	//button.remove();
+	button.remove();
 });
