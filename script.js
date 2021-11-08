@@ -54,6 +54,8 @@ function drawGame(){
 	div.append(button1);
 	div.append(button2);
 	
+	div.style.top=window.innerWidth-parseInt(div.style.height)+"px";
+	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
 		camera.aspect=window.innerWidth/window.innerHeight;
