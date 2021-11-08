@@ -54,7 +54,7 @@ function drawGame(){
 	div.append(button1);
 	div.append(button2);
 	
-	div.style.top=window.innerWidth-parseInt(div.clientHeight)+"px";
+	div.style.top=screen.height-parseInt(div.clientHeight)+"px";
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
