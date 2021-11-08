@@ -65,8 +65,8 @@ function drawGame(){
 		camera.updateProjectionMatrix();
 	});
 	function cycle(){
-		mesh.position.y+=1;
-		mesh2.position.y+=1;
+		mesh.position.z+=1;
+		mesh2.position.z+=1;
 		requestAnimationFrame(cycle);
 		render.render(scene,camera);
 	}
