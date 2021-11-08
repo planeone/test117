@@ -37,6 +37,7 @@ function drawGame(){
 	scene.add(mesh2);
 	
 	mesh.rotation.x=radians(-90);
+	mesh2.rotation.x=radians(-90);
 	
 	mesh2.position.z=mesh.scale.z
 	
