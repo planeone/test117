@@ -39,7 +39,7 @@ function drawGame(){
 	mesh.rotation.x=radians(-90);
 	mesh2.rotation.x=radians(-90);
 	
-	mesh2.position.z=-mesh.scale.z
+	mesh2.position.z=-1020
 	
 	const meshArr=[mesh,mesh2];
 	
@@ -75,8 +75,8 @@ function drawGame(){
 	function cycle(){
 		meshArr.forEach(function(elem){
 			elem.position.z+=1;
-			if(elem.position.z>=elem.scale.z){
-				elem.position.z=-elem.scale.z;
+			if(elem.position.z>=1020){
+				elem.position.z=-1020;
 			}
 		});
 		requestAnimationFrame(cycle);
