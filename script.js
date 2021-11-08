@@ -55,7 +55,7 @@ function drawGame(){
 	div.append(button2);
 	
 	div.style.top=screen.height-(parseInt(div.clientHeight)+200)+"px";
-	div.style.padingLeft="100px";
+	div.style.paddingLeft="100px";
 	
 	window.addEventListener("resize",function(){
 		render.setSize(window.innerWidth,window.innerHeight);
