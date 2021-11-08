@@ -20,7 +20,7 @@ button{
 #myButton{
 	position:absolute;
 	top:40%;
-	padding-left:200px;
+	padding-left:32px;
 }
 
 #gameCanvas{
