@@ -22,8 +22,8 @@ class Pleyer{
 				}
 			});
 			this.scene.add(obj);
-			return objMesh;
 		});
+		return objMesh;
 	}
 	drawCar(car=true){
 		let pos;
