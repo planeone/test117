@@ -1,3 +1,5 @@
+let objMesh=null;
+
 class Pleyer{
 	constructor(options){
 		this.scene=options.scene;
@@ -10,7 +12,6 @@ class Pleyer{
 		this.robot=options.robot;
 	}
 	draw(file,pos,rotation,scale){
-		var objMesh;
 		this.objLoade.load(this.car,(obj)=>{
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
