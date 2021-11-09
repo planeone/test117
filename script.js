@@ -62,10 +62,12 @@ function drawGame(){
 	const div=document.body.children[1];
 	
 	div.addEventListener("click",function(e){
-		if(e.target.textContent==="<"){
-			object.position.x-=1;
-		}else{
-			object.position.x+=1;
+		if(object!=null){
+			if(e.target.textContent==="<"){
+				object.position.x-=1;
+			}else{
+				object.position.x+=1;
+			}
 		}
 	});
 	
