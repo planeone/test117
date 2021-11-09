@@ -11,10 +11,10 @@ class Pleyer{
 	}
 	draw(file,pos,rotation,scale){
 		this.objLoade.load(this.car,(obj)=>{
+                        this.objMesh=obj;
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
-			this.objMesh=obj;
 			obj.traverse((child)=>{
 				if(child instanceof THREE.Mesh){
 					child.material=this.materialCar;
