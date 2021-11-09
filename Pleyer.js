@@ -1,5 +1,3 @@
-let objMesh=null;
-
 class Pleyer{
 	constructor(options){
 		this.scene=options.scene;
@@ -16,7 +14,7 @@ class Pleyer{
 			obj.position.set(pos.x,pos.y,pos.z);
 			obj.rotation.set(rotation.x,rotation.y,rotation.z);
 			obj.scale.set(scale.x,scale.y,scale.z);
-			objMesh=obj;
+			this.objMesh=obj;
 			obj.traverse((child)=>{
 				if(child instanceof THREE.Mesh){
 					child.material=this.materialCar;
@@ -24,7 +22,7 @@ class Pleyer{
 			});
 			this.scene.add(obj);
 		});
-		return objMesh;
+		return this.objMesh;
 	}
 	drawCar(car=true){
 		let pos;
