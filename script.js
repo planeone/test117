@@ -63,9 +63,9 @@ function drawGame(){
 	
 	div.addEventListener("click",function(e){
 		if(e.target.textContent==="<"){
-			pleyer.position.x-=1;
+			object.position.x-=1;
 		}else{
-			pleyer.position.x+=1;
+			object.position.x+=1;
 		}
 	});
 	
